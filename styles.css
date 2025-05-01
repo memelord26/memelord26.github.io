@@ -36,6 +36,7 @@ body{
     transition:  0.5s;
     left: calc(50% - 170px);
     top: 0;
+    line-height: 1;
 }
 #next{
     position: absolute;
