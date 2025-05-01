@@ -36,3 +36,19 @@ prev.onclick = function(){
     active = (active - 1 + items.length) % items.length;
     loadShow();
 }
+// Auto-scroll every 3 seconds
+let interval = setInterval(() => {
+    active = (active + 1) % items.length;
+    loadShow();
+}, 5000);
+
+document.querySelector('.slider').addEventListener('mouseenter', () => {
+    clearInterval(interval);
+});
+
+document.querySelector('.slider').addEventListener('mouseleave', () => {
+    interval = setInterval(() => {
+        active = (active + 1) % items.length;
+        loadShow();
+    }, 3000);
+});
