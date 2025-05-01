@@ -29,10 +29,10 @@ body{
     position: absolute;
     width: 320px;
     height: 200px;
-    text-align: justify;
+    text-align: left;
     background-color: #fff;
     border-radius: 10px;
-    padding: 20px;
+    padding: 10px;
     transition:  0.5s;
     left: calc(50% - 170px);
     top: 0;
