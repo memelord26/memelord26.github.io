@@ -3,7 +3,7 @@
 body{
     margin: 0;
     font-family: "Roboto Condensed", sans-serif;
-    background-color: #f5f5f5;
+    /*background-color: #f5f5f5;*/
     background-image: linear-gradient(to top, #9297c8, #f6c1a7);
 }
 
@@ -12,10 +12,24 @@ body{
     padding: 60px 20px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
 
+/*Home*/
+.home{
+    background-image: url("images/working.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #ddad96; /*https://www.color-hex.com/color/f6c1a7*/ /*colorshades*/
+    background-blend-mode: soft-light;
+}
+
+/*About*/
+.about{
+    
+}
+
+/*Projects*/
 .slider{
     padding-top: 60px;
     padding-bottom: 60px;
@@ -41,12 +55,12 @@ body{
 #next{
     position: absolute;
     right: 50px;
-    top: 20%;
+    top: 10%;
 }
 #prev{
     position: absolute;
     left: 50px;
-    top: 20%;
+    top: 10%;
 }
 #prev, #next{
     color: #fff;
@@ -61,4 +75,9 @@ body{
 #prev:hover,
 #next:hover{
     opacity: 1;
+}
+
+/*Contact*/
+.contact{
+    
 }
