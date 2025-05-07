@@ -1,5 +1,18 @@
 let items = document.querySelectorAll('.slider .item');
 let active = 3;
+
+//navbar
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+      x.className += " responsive";
+    } else {
+      x.className = "topnav";
+    }
+  }
+
+
+//projects slider
 function loadShow(){
     // Loop through and reset all items first
     for (let i = 0; i < items.length; i++) {

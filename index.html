@@ -4,65 +4,84 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <title>Phoebe Lau</title>
     <link rel="icon" href="images/favicon2.png">
 </head>
 <body>
+    <!--navigation tab-->
+    <div class="topnav" id="myTopnav">
+        <a href="https://www.linkedin.com/in/phoebelau-3070576sit" class="active" target="_blank">
+            <i class="ri-user-smile-fill"></i>
+        </a>
+
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact Me</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="ri-menu-3-line"></i>
+        </a>
+    </div>
+
     <!--Home-->
-    <div class="sectionS home">
+    <div class="sectionS home" id="home">
         <h1>Home</h1>
     </div>
 
     <!--About-->
-    <div class="sectionL about">
+    <div class="sectionL about" id="about">
         <h1>About</h1>
     </div>
 
     <!--Projects-->
-    <div class="sectionL slider">
-        <div class="item">
-            <h1>Project 1</h1>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum hic iure enim, rem accusamus odit nemo aspernatur consequuntur vero in veniam fugiat, consectetur officiis voluptatum quidem libero. Sed, dignissimos exercitationem, animi a repellendus tempora recusandae qui consequatur, itaque deleniti nobis.
+    <div class="sectionL projects" id="projects">
+        <h1>Projects</h1>
+        <div class="slider">
+            <div class="item">
+                <h1>Project 1</h1>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum hic iure enim, rem accusamus odit nemo aspernatur consequuntur vero in veniam fugiat, consectetur officiis voluptatum quidem libero. Sed, dignissimos exercitationem, animi a repellendus tempora recusandae qui consequatur, itaque deleniti nobis.
+            </div>
+            <div class="item">
+                <h1>Project 2</h1>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium voluptas ipsa similique magni adipisci accusamus consectetur fuga facilis doloremque dignissimos incidunt, reiciendis molestias dolore pariatur illum enim ipsum nostrum ab blanditiis? Voluptas, nostrum facere. Distinctio saepe facilis cumque! Voluptate, cumque.
+            </div>
+            <div class="item">
+                <h1>Project 3</h1>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium voluptas ipsa similique magni adipisci accusamus consectetur fuga facilis doloremque dignissimos incidunt, reiciendis molestias dolore pariatur illum enim ipsum nostrum ab blanditiis? Voluptas, nostrum facere. Distinctio saepe facilis cumque! Voluptate, cumque.
+            </div>
+            <div class="item ">
+                <h1>Project 4</h1>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium voluptas ipsa similique magni adipisci accusamus consectetur fuga facilis doloremque dignissimos incidunt, reiciendis molestias dolore pariatur illum enim ipsum nostrum ab blanditiis? Voluptas, nostrum facere. Distinctio saepe facilis cumque! Voluptate, cumque.
+            </div>
+            <div class="item ">
+                <h1>Project 5</h1>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium voluptas ipsa similique magni adipisci accusamus consectetur fuga facilis doloremque dignissimos incidunt, reiciendis molestias dolore pariatur illum enim ipsum nostrum ab blanditiis? Voluptas, nostrum facere. Distinctio saepe facilis cumque! Voluptate, cumque.
+            </div>
+            <div class="item ">
+                <h1>Project 6</h1>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium voluptas ipsa similique magni adipisci accusamus consectetur fuga facilis doloremque dignissimos incidunt, reiciendis molestias dolore pariatur illum enim ipsum nostrum ab blanditiis? Voluptas, nostrum facere. Distinctio saepe facilis cumque! Voluptate, cumque.
+            </div>
+            <div class="item ">
+                <h1>Project 7</h1>
+                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium voluptas ipsa similique magni adipisci accusamus consectetur fuga facilis doloremque dignissimos incidunt, reiciendis molestias dolore pariatur illum enim ipsum nostrum ab blanditiis? Voluptas, nostrum facere. Distinctio saepe facilis cumque! Voluptate, cumque.
+            </div>
+            <div class="item ">
+                <h1>Project 8</h1>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium voluptas ipsa similique magni adipisci accusamus consectetur fuga facilis doloremque dignissimos incidunt, reiciendis molestias dolore pariatur illum enim ipsum nostrum ab blanditiis? Voluptas, nostrum facere. Distinctio saepe facilis cumque! Voluptate, cumque.
+            </div>
+            <div class="item ">
+                <h1>Project 9</h1>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium voluptas ipsa similique magni adipisci accusamus consectetur fuga facilis doloremque dignissimos incidunt, reiciendis molestias dolore pariatur illum enim ipsum nostrum ab blanditiis? Voluptas, nostrum facere. Distinctio saepe facilis cumque! Voluptate, cumque.
+            </div>
+            <button id="next">></button>
+            <button id="prev"><</button>
         </div>
-        <div class="item">
-            <h1>Project 2</h1>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium voluptas ipsa similique magni adipisci accusamus consectetur fuga facilis doloremque dignissimos incidunt, reiciendis molestias dolore pariatur illum enim ipsum nostrum ab blanditiis? Voluptas, nostrum facere. Distinctio saepe facilis cumque! Voluptate, cumque.
-        </div>
-        <div class="item">
-            <h1>Project 3</h1>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium voluptas ipsa similique magni adipisci accusamus consectetur fuga facilis doloremque dignissimos incidunt, reiciendis molestias dolore pariatur illum enim ipsum nostrum ab blanditiis? Voluptas, nostrum facere. Distinctio saepe facilis cumque! Voluptate, cumque.
-        </div>
-        <div class="item ">
-            <h1>Project 4</h1>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium voluptas ipsa similique magni adipisci accusamus consectetur fuga facilis doloremque dignissimos incidunt, reiciendis molestias dolore pariatur illum enim ipsum nostrum ab blanditiis? Voluptas, nostrum facere. Distinctio saepe facilis cumque! Voluptate, cumque.
-        </div>
-        <div class="item ">
-            <h1>Project 5</h1>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium voluptas ipsa similique magni adipisci accusamus consectetur fuga facilis doloremque dignissimos incidunt, reiciendis molestias dolore pariatur illum enim ipsum nostrum ab blanditiis? Voluptas, nostrum facere. Distinctio saepe facilis cumque! Voluptate, cumque.
-        </div>
-        <div class="item ">
-            <h1>Project 6</h1>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium voluptas ipsa similique magni adipisci accusamus consectetur fuga facilis doloremque dignissimos incidunt, reiciendis molestias dolore pariatur illum enim ipsum nostrum ab blanditiis? Voluptas, nostrum facere. Distinctio saepe facilis cumque! Voluptate, cumque.
-        </div>
-        <div class="item ">
-            <h1>Project 7</h1>
-             Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium voluptas ipsa similique magni adipisci accusamus consectetur fuga facilis doloremque dignissimos incidunt, reiciendis molestias dolore pariatur illum enim ipsum nostrum ab blanditiis? Voluptas, nostrum facere. Distinctio saepe facilis cumque! Voluptate, cumque.
-        </div>
-        <div class="item ">
-            <h1>Project 8</h1>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium voluptas ipsa similique magni adipisci accusamus consectetur fuga facilis doloremque dignissimos incidunt, reiciendis molestias dolore pariatur illum enim ipsum nostrum ab blanditiis? Voluptas, nostrum facere. Distinctio saepe facilis cumque! Voluptate, cumque.
-        </div>
-        <div class="item ">
-            <h1>Project 9</h1>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium voluptas ipsa similique magni adipisci accusamus consectetur fuga facilis doloremque dignissimos incidunt, reiciendis molestias dolore pariatur illum enim ipsum nostrum ab blanditiis? Voluptas, nostrum facere. Distinctio saepe facilis cumque! Voluptate, cumque.
-        </div>
-        <button id="next">></button>
-        <button id="prev"><</button>
     </div>
 
     <!--Contact-->
-    <div class="sectionS contact">
+    <div class="sectionS contact" id="contact">
         <h1>Contact</h1>
     </div>
     <script src="app.js"></script>
