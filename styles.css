@@ -27,7 +27,7 @@ body{
 /*Navigation menu*/
 .topnav {
     overflow: hidden;
-    background-color: #f6c1a7;
+    background-color: #c9a8f1;
     /*border-bottom: #949494;
     border-bottom-style: solid;*/
     position: fixed;
@@ -52,7 +52,7 @@ body{
   }
   
   .topnav a.active {
-    background-color: #f7cb9a;
+    background-color: #f6c1a7;
     color: #313131;
   }
   
@@ -90,12 +90,22 @@ body{
 /*Home*/
 .home{
     background-image: url("images/working.jpeg");
-    background-size: cover;
-    background-position: center;
+    background-size: auto;
+    background-position: center center;
     background-repeat: no-repeat;
     background-color: #d5cdf3; /*https://www.color-hex.com/color/f6c1a7*/ /*colorshades*/
     background-blend-mode: soft-light;
     background-attachment: fixed;
+}
+#intro{
+  font-size: 40px;
+  text-align: right;
+  font-weight: bold;
+}
+@media screen and (max-width: 600px) {
+  #intro{
+    font-size: 35px;
+  }
 }
 
 /*About*/
@@ -105,9 +115,10 @@ body{
 
 /*Projects*/
 .projects{
-
+  background-image: linear-gradient(#e6e1f9, #f9e9e0);
+  position: relative; /* Ensure stacking context is defined */
+  z-index: 0;
 }
-
 .slider{
     padding-top: 60px;
     padding-bottom: 60px;
@@ -115,7 +126,8 @@ body{
     margin-top: 100px;
     width: 100%;
     height: 370px;
-    overflow: hidden;
+    overflow: visible;
+    z-index: 1;
 }
 .item{
     position: absolute;
@@ -129,6 +141,9 @@ body{
     left: calc(50% - 170px);
     top: 0;
     line-height: 1;
+    z-index: 10;
+    opacity: 0;
+    transform: scale(0);
 }
 #next{
     position: absolute;
@@ -141,7 +156,7 @@ body{
     top: 20%;
 }
 #prev, #next{
-    color: #fff;
+    color: #313131;
     background: none;
     border: none;
     font-size: xxx-large;
@@ -154,8 +169,13 @@ body{
 #next:hover{
     opacity: 1;
 }
+@media screen and (max-width: 600px){
+  #prev, #next{
+    display: none;
+  }
+}
 
 /*Contact*/
 .contact{
-   
+  background-color: #f9e9e0;
 }

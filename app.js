@@ -1,5 +1,28 @@
-let items = document.querySelectorAll('.slider .item');
-let active = 3;
+//slider phone_swipe
+let startX = 0;
+let endX = 0;
+
+const slider = document.querySelector('.slider');
+
+slider.addEventListener('touchstart', (e) => {
+    startX = e.touches[0].clientX;
+});
+
+slider.addEventListener('touchmove', (e) => {
+    endX = e.touches[0].clientX;
+});
+
+slider.addEventListener('touchend', () => {
+    if (startX - endX > 50) {
+        // Swipe left
+        active = (active + 1) % items.length;
+        loadShow();
+    } else if (endX - startX > 50) {
+        // Swipe right
+        active = (active - 1 + items.length) % items.length;
+        loadShow();
+    }
+});
 
 //navbar
 function myFunction() {
@@ -13,6 +36,9 @@ function myFunction() {
 
 
 //projects slider
+let items = document.querySelectorAll('.slider .item');
+let active = 3;
+
 function loadShow(){
     // Loop through and reset all items first
     for (let i = 0; i < items.length; i++) {
