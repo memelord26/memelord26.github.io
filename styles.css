@@ -96,14 +96,34 @@ body{
     background-color: #d5cdf3; /*https://www.color-hex.com/color/f6c1a7*/ /*colorshades*/
     background-blend-mode: soft-light;
     background-attachment: fixed;
+
+    display: flex;
+    /*justify-content: center;*/
 }
-#intro{
+.home p{
   font-size: 40px;
-  text-align: right;
-  font-weight: bold;
+  /*margin-inline: auto;*/
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 5px solid;
+  animation: typing 3s steps(56) forwards,
+  blink 1s step-end infinite;
+}
+@keyframes typing {
+  from {
+    width: 0;
+  }  
+  to {
+    width: 100%;
+  }
+}
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
 }
 @media screen and (max-width: 600px) {
-  #intro{
+  .home p{
     font-size: 35px;
   }
 }
